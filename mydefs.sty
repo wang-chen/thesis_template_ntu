@@ -1,0 +1,33 @@
+%% Version 1.4.3 (11/1/2015)
+%% Created by Jimmy Xu
+%self-defined macros and commands for brevity.
+\def \colexp #1{[#1_1,#1_2,...,#1_m]^T}
+\newcommand{\overbar}[1]{\mkern 1.5mu\overline{\mkern-1.5mu#1\mkern-1.5mu}\mkern 1.5mu}
+\newcommand{\proj}[2][\mathcal{X}]{P_{#1}\left [#2\right ]}
+\def \avector {\frac{{\bf 1}{\bf 1}^T}{m}}
+\def \hnorm [#1]#2#3{\left\|#1_{#2}^{#3}\right\|} %\sqrt{\sum^t_{k=0}{#1}^2}     
+\def \enorm #1{\left\|#1\right\|_E} %\sqrt{E\left[\left\|#1\right\|^2\right]}
+\def \condexp #1{E\left[#1|\mathcal{F}_k\right]}
+\def \einnprod #1#2{\left\langle #1, #2\right \rangle_E} %define the innerproduct of two random vector
+\def \expect #1{E\left[#1\right]}
+\def \bracket #1{\left(#1\right)}
+
+\def \norm #1{\left\|#1\right\|}
+\def \innprod #1#2{\left\langle #1, #2\right \rangle}
+\def \ones {{\bf 1}}
+\def \Ones {\mathds{1}}  %include usepackage{dsfont}
+\def \zeros {{\bf 0}}
+\def \Bracket #1{\left\{#1\right\}}
+\def \seq #1{\{#1\}_{k\geq 0}}
+\def \prox #1#2{{\bf prox}_{#1}#2}
+\def \ocp {(OCP)}
+\def \oep {(OEP)}
+\def \cspace {\mathcal{C}}
+\def \eqname #1#2{\overset{(\text{#1})}{#2}} %denoting the symbol of inequalities
+\def \abs #1{\left|#1\right|} 
+\def \alert #1{\textcolor{red}{#1}}
+\def \myfigscale {0.618}
+\def \myfigwidth {0.4944\textwidth}
+\def \mybigfigwidth {0.7416\textwidth}
+\def \mysubfigwidth {0.4326\textwidth}
+\def \etal {\emph{et al.}~}
