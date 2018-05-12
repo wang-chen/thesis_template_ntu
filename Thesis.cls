@@ -117,6 +117,7 @@
 %\theoremstyle{remark}
 %\newtheorem{rem}{Remark}
 \usepackage[centerlast,small,sc]{caption}
+\captionsetup{justification=justified,singlelinecheck=true}
 \setlength{\captionmargin}{20pt}
 \newcommand{\fref}[1]{Figure~\ref{#1}}
 \newcommand{\tref}[1]{Table~\ref{#1}}
