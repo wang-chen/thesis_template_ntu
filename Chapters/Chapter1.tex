@@ -9,9 +9,25 @@
 %	SECTION 1
 %----------------------------------------------------------------------------------------
 
-\section{Scope and Overview}
+\section{Some useful hints}
 
-My overview \ref{fig:demo1}.
+My figure citation: \fref{fig:demo1}. (command: fref)
+
+My section citation: \sref{sec:contribution}. (command: sref)
+
+My Chaptere citation: \cref{ch:introduction}. (command: cref)
+
+My Paper citation: \cite{bauschke2011convex}. (notice back reference from bibliograph)
+
+My equation citation: \eqref{eq:equ2}. (command: eqref), or cite equation by tag: \eqref{eq:equ1}.
+
+\begin{equation}\label{eq:equ1}
+F(\theta)=\sum_{i=1}^mf_i(\theta) \tag{DOP}
+\end{equation}
+
+\begin{equation}\label{eq:equ2}
+F(\theta)=\sum_{i=1}^mf_i(\theta)
+\end{equation}
 
 \begin{figure}[htbp]
   \centering
@@ -23,7 +39,7 @@ My overview \ref{fig:demo1}.
 
 
 %----------------------------------------------------------------------------------------
-\section{Major Contributions}
+\section{Major Contributions}\label{sec:contribution}
 Our main contributions can be stated as follows:
 \begin{itemize}
 \item \emph{First part}: My first contributions, several lines
@@ -44,7 +60,7 @@ Third contributions, several lines
 
 \cref{ch:introduction} introduces ...
 
-\cref{ch:literature_review} reviews 
+\cref{ch:literature_review} reviews ...
 
 
 
