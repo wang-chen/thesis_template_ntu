@@ -264,7 +264,7 @@
   % \includegraphics[width=250pt]{NTU_logoplus}\\[1cm] % University/department logo - uncomment to place it
   \setstretch{2}
   \vfill 
-  \textbf{\LARGE \ttitle}\\% Thesis title
+  \textbf{\LARGE \newline\newline\newline\ttitle}\\% Thesis title
   \setstretch{1.5}
   \vfill
   \textbf{\Large \authornames}
