@@ -1,6 +1,6 @@
 %MIT License
 %
-%Copyright (c) 2018 Wang Chen and Jinming Xu
+%Copyright (c) 2018 Wang Chen
 %
 %Permission is hereby granted, free of charge, to any person obtaining a copy
 %of this software and associated documentation files (the "Software"), to deal
@@ -22,24 +22,41 @@
 \documentclass[12pt,a4paper,twoside]{Thesis} % Paper size, default font size and one-sided paper
 
 \graphicspath{%
-    {./Pictures/}% 
-    {./Figures/}% 
+	{./Pictures/}% 
+	{./Figures/}% 
 }
-
+\DeclareMathOperator{\Tr}{Tr}
+\let\savedegree\degree
+\let\degree\relax
+\let\savedegree\ref
+\let\rem\relax
+\usepackage{adjustbox}
+\usepackage{amsmath}
+\usepackage[amssymb]{SIunits}
+\usepackage{amssymb}
+\usepackage{multirow}
+\usepackage{wrapfig}
+\usepackage{subcaption}
+\usepackage{mathtools}
+\usepackage[ruled,vlined,noresetcount]{algorithm2e}
+%\usepackage{algpseudocode}
 \usepackage[square, numbers, comma, sort&compress]{natbib} % Use the natbib reference package - read up on this to edit the reference style; if you want text (e.g. Smith et al., 2012) for the in-text references (instead of numbers), remove 'numbers' 
 
-\hypersetup{urlcolor=black, colorlinks=true} % Colors hyperlinks in blue - change to black if annoying
 \title{\ttitle} % Defines the thesis title - don't touch this
 
 %extra packages
 \usepackage{float}
-\usepackage[caption=false,font=footnotesize]{subfig}    % mutiple subfigures
-% \renewcommand{\thesubfigure}{\Alph{subfigure}}
 \usepackage{color,soul}               % highlighting text
 \usepackage{enumerate}
 % \usepackage{enumitem}
 \usepackage{Styles/mydefs}
-%--------------------------------------------------------------------------------------------
+
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{corollary}{Corollary}[theorem]
+\newtheorem{lemma}[theorem]{Lemma}
+%\newtheorem{definition}[Definition]{definition}
+\theoremstyle{definition}
+\newtheorem{definition}{Definition}[section]
 
 \begin{document}
 

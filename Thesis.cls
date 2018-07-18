@@ -101,7 +101,7 @@
 \thispagestyle{empty}
 \newpage
 \if@twocolumn\hbox{}\newpage\fi\fi\fi}
-\usepackage{amsmath,amsfonts,amssymb,amscd,amsthm,xspace}
+\usepackage{amsmath,amsfonts,amscd,amsthm,xspace}
 \theoremstyle{plain}
 \newtheorem{expl}{Example}[chapter]
 \newtheorem{thm}{Theorem}[chapter]
@@ -119,6 +119,7 @@
 \usepackage[centerlast,small,sc]{caption}
 \captionsetup{justification=justified,singlelinecheck=true}
 \setlength{\captionmargin}{20pt}
+\newcommand{\pref}[1]{Part~\ref{#1}}
 \newcommand{\fref}[1]{Figure~\ref{#1}}
 \newcommand{\tref}[1]{Table~\ref{#1}}
 \newcommand{\eref}[1]{Equation~(\ref{#1})}
@@ -150,8 +151,6 @@
 \usepackage{rotating}
 \usepackage{listings}
 \usepackage{Styles/lstpatch}
-\usepackage{algorithm}
-\usepackage{algpseudocode}
 \lstset{captionpos=b,
         frame=tb,
         basicstyle=\scriptsize\ttfamily,
@@ -163,9 +162,9 @@
         commentstyle=\color[rgb]{0.13,0.55,0.13}\em,
         stringstyle=\color[rgb]{0.7,0,0} }
 \usepackage[pdfpagemode={UseOutlines},bookmarks=true,bookmarksopen=true,
-   bookmarksopenlevel=0,bookmarksnumbered=true,hypertexnames=true,
-   colorlinks,linkcolor={blue},citecolor={blue},urlcolor={black},
-   pdfstartview={FitV},unicode,breaklinks=true,plainpages=false,backref=page]{hyperref}
+   bookmarksopenlevel=1,bookmarksnumbered=true,hypertexnames=true,
+   colorlinks,linkcolor={blue},citecolor={blue},urlcolor={black},pdfauthor={Chen Wang},pdftitle={Kernel Learning for Visual Perception},
+   pdfstartview={FitV},unicode,breaklinks=true,plainpages=false, backref=page]{hyperref}
 \pdfstringdefDisableCommands{
    \let\\\space
 }
@@ -196,15 +195,15 @@
 
 %Your thesis title - this is used in the title and abstract
 %-------------------------------------------------  
-\thesistitle{My Title} %
+\thesistitle{The Greatest Thesis in the World} %
 %-------------------------------------------------  
-\supervisor{Prof. First \textsc{Last}} % You supervisor's name - this is used in the title page
+\supervisor{Prof. Lihua \textsc{Xie}} % You supervisor's name - this is used in the title page
 %-------------------------------------------------   
 \examiner{} % Your examiner's name - this is not currently used anywhere in the template, cite it with \examname if you want it
 %-------------------------------------------------   
 \degree{Doctor of Philosophy} % Your degree name - this is currently used in the title page and abstract
 %-------------------------------------------------   
-\authors{My Name} % Your name - this is used in the title page and abstract
+\authors{\href{https://mylink.com}{Author Name}} % Your name - this is used in the title page and abstract
 %-------------------------------------------------   
 \addresses{} % Your address - this is not currently used anywhere in the template, cite it with \addressnames if you want it
 %-------------------------------------------------   
@@ -216,11 +215,11 @@
                 {University Name}} % Your university's name - this is currently used in the title page
                 {University Name}}
 %-------------------------------------------------   
-\UNIVERSITY{\texorpdfstring{\href{University Web Site URL Here (include http://)} % Your university's URL
+\UNIVERSITY{\texorpdfstring{\href{http://www.ntu.edu.sg/} % Your university's URL
                 {UNIVERSITY NAME (IN BLOCK CAPITALS)}} % Your university's name in capitals - this is currently used in the abstract page
                 {UNIVERSITY NAME (IN BLOCK CAPITALS)}}
 %-------------------------------------------------                
-\department{\texorpdfstring{\href{Department or School Web Site URL Here (include http://)} % Your department's URL
+\department{\texorpdfstring{\href{http://www.eee.ntu.edu.sg} % Your department's URL
                 {School of Electrical \& Electronic Engineering}} % Your department's name - used in the title page and abstract
                 {Department or School Name}}
 %-------------------------------------------------                
@@ -261,15 +260,17 @@
   \thispagestyle{empty}
   \begin{titlepage}
   \begin{center}
-  % \includegraphics[width=250pt]{NTU_logoplus}\\[1cm] % University/department logo - uncomment to place it
   \setstretch{2}
-  \vfill 
-  \textbf{\LARGE \newline\newline\newline\ttitle}\\% Thesis title
-  \setstretch{1.5}
   \vfill
-  \textbf{\Large \authornames}
+  \textbf{\LARGE \newline \rule{\linewidth}{2pt}\\\vspace{-7pt}\ttitle\\\rule{\linewidth}{2pt}}\\% Thesis title
+  % \setstretch{1.5}
   \vfill
-  {\Large \textbf\deptname}\\[1.2cm] % University name
+  \href{http://www.ntu.edu.sg}{\includegraphics[width=230pt]{Styles/ntu_logo}}\\%[2cm]
+  \vfill
+  \textbf{\Large \authornames}\\%[1.2cm]
+  {\large \deptname}\\%[1.2cm] % University name
+  \vfill
+  \setstretch{1.2}
   \large A thesis submitted to the Nanyang Technological University \\ in partial fulfillment of the requirements for the degree of\\ \degreename\\[1cm] % University requirement text
   {\large\bf \the\year}\\[2cm] % Date
   \end{center}
@@ -428,11 +429,11 @@
 }
 
 \newcommand\authorpublications[1]{
-\btypeout{Author's Publications}
-\addtotoc{Author's Publications}
+\btypeout{List of Author's Award, Patent, and Publication}
+\addtotoc{List of Author's Award, Patent, and Publication}
 \thispagestyle{plain}
 \vspace*{1.5cm}
-\begin{center}{\flushleft\Huge{\textbf{Author's Publications}} \par}\end{center}  
+\begin{center}{\flushleft\Huge{\textbf{List of Author's Award, Patent, and Publication\footnote[1]{The superscript $^*$ indicates joint first authors}}} \par}\end{center}  
 {\normalsize #1}
 \vfil\vfil\null
 \cleardoublepage
