@@ -9,7 +9,7 @@ Author: [Chen Wang](https://wang-chen.github.io)
     
     Please change your name, title, and school in the file of Thesis.cls
     
-## You may also view this template in [Overleaf Project](https://v2.overleaf.com/read/hrjsywqdhccp) (Previous ShareLatex)
+## You may also view this template in [Sharelatex (Overleaf) Project](https://v2.overleaf.com/read/hrjsywqdhccp)
 
 For format requirements, please check the [NTU site](http://www.ntu.edu.sg/Students/Graduate/AcademicServices/Thesis/Pages/Formatoffinalthesis.aspx).
 
