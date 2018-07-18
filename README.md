@@ -3,7 +3,7 @@
 
 This version has been verified by NTU
 
-Authors: Chen Wang
+Author: [Chen Wang](https://wang-chen.github.io)
 
 ## Usage:
     
