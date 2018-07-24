@@ -195,7 +195,7 @@
 
 %Your thesis title - this is used in the title and abstract
 %-------------------------------------------------  
-\thesistitle{The Greatest Thesis in the World} %
+\thesistitle{\href{https://github.com/wang-chen/thesis_template_ntu}{The Greatest Thesis in the World}} %
 %-------------------------------------------------  
 \supervisor{Prof. Lihua \textsc{Xie}} % You supervisor's name - this is used in the title page
 %-------------------------------------------------   
@@ -203,7 +203,7 @@
 %-------------------------------------------------   
 \degree{Doctor of Philosophy} % Your degree name - this is currently used in the title page and abstract
 %-------------------------------------------------   
-\authors{\href{https://mylink.com}{Author Name}} % Your name - this is used in the title page and abstract
+\authors{\href{https://wang-chen.github.io}{Author Name}} % Your name - this is used in the title page and abstract
 %-------------------------------------------------   
 \addresses{} % Your address - this is not currently used anywhere in the template, cite it with \addressnames if you want it
 %-------------------------------------------------   

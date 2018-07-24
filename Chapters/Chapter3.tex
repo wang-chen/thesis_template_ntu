@@ -14,18 +14,28 @@
 \section{Section1}\label{sec:top_opt_model}
 
  
- See \fref{fig:demo2}
+See \fref{fig:demo2}
 
 \begin{figure}[!htbp]
   \centering
-    \includegraphics[width=0.6\linewidth]{Chapter2/demo1}
+    \includegraphics[width=0.4\linewidth]{Chapter2/demo1}
   \caption{Another illustration.}
   \label{fig:demo2}
 \end{figure}
 
+Let's cite out first table: \tref{tab:mytable}.
 
-%-----------------------------------
-% SECTION 1
-%-----------------------------------
-\section{Section2}\label{sec:canonical_dopt}
+\begin{table}
+	\centering
+	\begin{tabular}{ccccc}\toprule
+		\multirow{2}{*}{Table}  & \multicolumn{2}{c}{Group 1}   & \multicolumn{2}{c}{Group 2}\\
+		& Col 1   &  Col 2 & Col 1   &  Col 2 \\\midrule
+		Row 1 & 14.37 & \textbf{5.76} & 2.65 & \textbf{2.84}\\
+		Row 2   & 5.43 & \textbf{7.36}     & 2.22 & \textbf{2.49}\\ 
+		Row 3 & 5.54 & \textbf{5.68}   & \textbf{4.42} &  2.92\\
+		\bottomrule
+	\end{tabular}
+	\caption{My Table.}
+	\label{tab:mytable}
+\end{table}
 
