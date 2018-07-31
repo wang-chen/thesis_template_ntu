@@ -429,14 +429,17 @@
 }
 
 \newcommand\authorpublications[1]{
-\btypeout{List of Author's Award, Patent, and Publication}
-\addtotoc{List of Author's Award, Patent, and Publication}
-\thispagestyle{plain}
-\vspace*{1.5cm}
-\begin{center}{\flushleft\Huge{\textbf{List of Author's Award, Patent, and Publication\footnote[1]{The superscript $^*$ indicates joint first authors}}} \par}\end{center}  
-{\normalsize #1}
-\vfil\vfil\null
-\cleardoublepage
+	\newcommand\secname{List of Author's Awards, Patents, and Publications}
+	\addcontentsline{toc}{section}{\secname}
+	\markboth{\secname}{\secname}
+	\btypeout{\secname}
+	\addtotoc{\secname}
+	\thispagestyle{plain}
+	\vspace*{1.5cm}
+	\begin{center}{\flushleft\Huge{\textbf{\secname\footnote[1]{The superscript $^*$ indicates joint first authors}}} \par}\end{center}  
+	{\normalsize #1}
+	\vfil\vfil\null
+	\cleardoublepage
 }
 
 \newcommand\dedicatory[1]{
