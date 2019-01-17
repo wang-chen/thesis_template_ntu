@@ -278,6 +278,30 @@
   \cleardoublepage
 }
 
+\newcommand\maketitleforreview{
+    \btypeout{Title Page}
+    \hypersetup{pdftitle={\@title}}
+    \hypersetup{pdfsubject=\subjectname}
+    \hypersetup{pdfauthor=\authornames}
+    \hypersetup{pdfkeywords=\keywordnames}
+    \thispagestyle{empty}
+    \begin{titlepage}
+             \begin{center}
+                      \setstretch{2}
+                      \vfill
+                      \textbf{\LARGE \newline \ttitle}\\% Thesis title
+                      \vfill
+                      \textbf{\Large \authornames}\\[1cm]
+                      {\large \deptname}\\%[1.2cm] % University name
+                      \vfill
+                      \setstretch{1.2}
+                      \large A thesis submitted to the Nanyang Technological University \\ in partial fulfillment of the requirements for the degree of\\ \degreename\\[1cm] % University requirement text
+                      {\large\bf \the\year}\\[2cm] % Date
+              \end{center}
+    \end{titlepage}
+    \cleardoublepage
+}
+
 
 %----------------------------------------------------------------------------------------
 %	ABSTRACT PAGE DESIGN
