@@ -197,7 +197,7 @@
 %-------------------------------------------------  
 \thesistitle{\href{https://github.com/wang-chen/thesis_template_ntu}{The Greatest Thesis in the World}} %
 %-------------------------------------------------  
-\supervisor{Prof. Lihua \textsc{Xie}} % You supervisor's name - this is used in the title page
+\supervisor{Prof. Einstein \textsc{XXX}} % You supervisor's name - this is used in the title page
 %-------------------------------------------------   
 \examiner{} % Your examiner's name - this is not currently used anywhere in the template, cite it with \examname if you want it
 %-------------------------------------------------   
@@ -412,21 +412,22 @@
 \vfil\vfil\null
 \cleardoublepage
 }
-% NTU Style 
-\newcommand\thesisdeclare[1]{
+% NTU Style 3 statements
+\newcommand\thesisdeclare[3]{
 \btypeout{Declaration}
 \thispagestyle{empty}
 \begin{spacing}{2}
-\begin{center}\Large \underline{\bf Statement of Originality}\end{center}
-{\textnormal{\large #1}}
+\begin{center}\Large {\bf #1}\end{center}
+{\textnormal{\large #2}}
 \vspace{2.5cm}
 \begin{center}
 \makebox[4cm]{\dotfill}  \hfill \makebox[4cm]{\dotfill}\\
-\makebox[4cm]{Date}    \hfill \makebox[4cm]{\authornames}   
+\makebox[4cm]{Date}    \hfill \makebox[4cm]{#3}   
 \end{center}
 \end{spacing}
 \cleardoublepage
 }
+
 
 \newcommand\authorpublications[1]{
 	\newcommand\secname{List of Author's Awards, Patents, and Publications}
