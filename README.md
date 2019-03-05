@@ -19,5 +19,14 @@ For cover demo, please refer to the [Demo Page](http://www.ntu.edu.sg/sasd/oas/g
 ## The title page example
 ![The title page example](https://github.com/wang-chen/thesis_template_ntu/blob/master/Styles/title-page.png)
 
+## Optional plain title page
+
+If you prefer a plain title page for review, use \maketitleforreview instead of \maketitle, in the file of "mythesis.tex"
+        
+        %\maketitle
+        \maketitleforreview
+This will result in:
+![The title page example](https://github.com/wang-chen/thesis_template_ntu/blob/master/Styles/title-page-plain.png)
+
 
 Acknowledgement: [Jinming Xu](https://jinmingxu.github.io)
