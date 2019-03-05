@@ -279,27 +279,28 @@
 }
 
 \newcommand\maketitleforreview{
-    \btypeout{Title Page}
-    \hypersetup{pdftitle={\@title}}
-    \hypersetup{pdfsubject=\subjectname}
-    \hypersetup{pdfauthor=\authornames}
-    \hypersetup{pdfkeywords=\keywordnames}
-    \thispagestyle{empty}
-    \begin{titlepage}
-             \begin{center}
-                      \setstretch{2}
-                      \vfill
-                      \textbf{\LARGE \newline \ttitle}\\% Thesis title
-                      \vfill
-                      \textbf{\Large \authornames}\\[1cm]
-                      {\large \deptname}\\%[1.2cm] % University name
-                      \vfill
-                      \setstretch{1.2}
-                      \large A thesis submitted to the Nanyang Technological University \\ in partial fulfillment of the requirements for the degree of\\ \degreename\\[1cm] % University requirement text
-                      {\large\bf \the\year}\\[2cm] % Date
-              \end{center}
-    \end{titlepage}
-    \cleardoublepage
+	\btypeout{Title Page}
+	\hypersetup{pdftitle={\@title}}
+	\hypersetup{pdfsubject=\subjectname}
+	\hypersetup{pdfauthor=\authornames}
+	\hypersetup{pdfkeywords=\keywordnames} 
+	\thispagestyle{empty}
+	\begin{titlepage}
+		\begin{center}
+			\setstretch{2}
+			\vfill
+			\textbf{\LARGE \newline \ttitle}\\% Thesis title
+			\vfill
+			\textbf{\Large \textbf{\authornames}}\\[1cm]
+			\vfill
+			{\large \textbf{\deptname}}\\%[1.2cm] % University name
+			[1.2cm]
+			\setstretch{1.2}
+			\large A thesis submitted to the Nanyang Technological University \\ in partial fulfillment of the requirements for the degree of\\ \degreename\\[1cm] % University requirement text
+			{\large\bf \the\year}\\[2cm] % Date
+		\end{center}
+	\end{titlepage}
+	\cleardoublepage
 }
 
 
@@ -436,26 +437,75 @@
 \vfil\vfil\null
 \cleardoublepage
 }
+
 % NTU Style 3 statements
-\newcommand\thesisdeclare[3]{
-\btypeout{Declaration}
-\thispagestyle{empty}
-\begin{spacing}{2}
-\begin{center}\Large {\bf #1}\end{center}
-{\textnormal{\large #2}}
-\vspace{2.5cm}
-\begin{center}
-\makebox[4cm]{\dotfill}  \hfill \makebox[4cm]{\dotfill}\\
-\makebox[4cm]{Date}    \hfill \makebox[4cm]{#3}   
-\end{center}
-\end{spacing}
-\cleardoublepage
+\newcommand\thesisdeclareOriginality[3]{
+	\btypeout{Declaration}
+	\thispagestyle{empty}
+	\begin{spacing}{2}
+		\begin{center}\Large \underline{\bf Statement of Originality}\end{center}
+		{\textnormal{\large #1}}
+		\vspace{2.5cm}
+		\begin{center}
+			\makebox[4cm]{#2}  \hfill
+			\makebox[4cm]{\includegraphics[height=0.9cm]{#3}}\\
+		\end{center}
+		\vspace{-1.8cm}
+		\begin{center}
+			\makebox[4cm]{\dotfill}  \hfill \makebox[4cm]{\dotfill}\\
+			\makebox[4cm]{Date}    \hfill \makebox[4cm]{\authornames}   
+		\end{center}
+	\end{spacing}
+	\cleardoublepage
+}
+
+\newcommand\thesisdeclareSupervisor[3]{
+	\btypeout{Declaration}
+	\thispagestyle{empty}
+	\begin{spacing}{2}
+		\begin{center}\Large \underline{\bf Supervisor Declaration Statement}\end{center}
+		{\textnormal{\large #1}}
+		\vspace{2.5cm}
+		\begin{center}
+			\makebox[4cm]{#2}  \hfill
+			\makebox[4cm]{\includegraphics[height=0.9cm]{#3}}\\
+		\end{center}
+		\vspace{-1.8cm}
+		\begin{center}
+			\makebox[4cm]{\dotfill}  \hfill \makebox[4cm]{\dotfill}\\
+			\makebox[4cm]{Date}    \hfill \makebox[4cm]{\supname}   
+		\end{center}
+	\end{spacing}
+	\cleardoublepage
+}
+
+\newcommand\thesisdeclareAuthorship[4]{
+	\btypeout{Declaration}
+	\thispagestyle{empty}
+	\begin{spacing}{2}
+		\begin{center}\Large \underline{\bf Authorship Attribution Statement}\end{center}
+		{\textnormal{\large #1}}
+	\end{spacing}
+	\begin{spacing}{2}
+		{\setstretch{1.0}#2}
+		\vspace{2.5cm}
+		\begin{center}
+			\makebox[4cm]{#3}  \hfill
+			\makebox[4cm]{\includegraphics[height=0.9cm]{#4}}\\
+		\end{center}
+		\vspace{-1.8cm}
+		\begin{center}
+			\makebox[4cm]{\dotfill}  \hfill \makebox[4cm]{\dotfill}\\
+			\makebox[4cm]{Date}    \hfill \makebox[4cm]{\authornames}   
+		\end{center}
+	\end{spacing}
+	\cleardoublepage
 }
 
 
 \newcommand\authorpublications[1]{
 	\newcommand\secname{List of Author's Awards, Patents, and Publications}
-	\addcontentsline{toc}{section}{\secname}
+%	\addcontentsline{toc}{section}{\secname}
 	\markboth{\secname}{\secname}
 	\btypeout{\secname}
 	\addtotoc{\secname}
