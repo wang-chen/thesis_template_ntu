@@ -26,7 +26,7 @@ Author: [Chen Wang](https://wang-chen.github.io)
 
 ## Updates (Title Page), Aug. 2018:
 
-   We provide two styles for the title page, use \maketitleforreview or \maketitle, in the file of "mythesis.tex", to choose your prefered one. Normally, the Uiversity recommend  "\maketitleforreview".
+   We provide two styles for the title page, use "\maketitleforreview" or "\maketitle", in the file of "mythesis.tex", to choose your prefered one. Normally, the University prefers "\maketitleforreview".
         
         %\maketitle
         \maketitleforreview
@@ -40,6 +40,6 @@ Beautiful title page:
     
 ## You may also view this template in [Sharelatex (Overleaf) Project](https://v2.overleaf.com/read/hrjsywqdhccp)
 
-## For cover demo, please refer to the [Demo Page](http://www.ntu.edu.sg/sasd/oas/ge/Documents/FormatofThesis_Sample_Oct2017.pdf).
+## For hard cover demo, please refer to the [Demo Page](http://www.ntu.edu.sg/sasd/oas/ge/Documents/FormatofThesis_Sample_Oct2017.pdf).
 
 Acknowledgement: [Jinming Xu](https://jinmingxu.github.io)
