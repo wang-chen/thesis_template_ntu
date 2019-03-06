@@ -65,11 +65,13 @@
 
 \setstretch{1.3} % Line spacing of 1.3
 % Define the page headers using the Fr package and set up for one-sided printing
-\fancyhead{}     % Clears all page headers and footers
-\rhead{\thepage} % Sets the right side header to show the page number
-\lhead{}         % Clears the left side page header
 
 \pagestyle{fancy} % Finally, use the "fancy" page style to implement the FancyHdr headers
+\fancyhead{}   %clear all fields
+\fancyhead[LO]{\sl{\leftmark}}
+\fancyhead[RE]{\sl{\rightmark}}
+\fancyhead[LE,RO]{\thepage}
+
 
 %----------------------------------------------------------------------------------------
 %	TITLE PAGE
@@ -89,8 +91,10 @@
 
 \thesisdeclareSupervisor{I have reviewed the content and presentation style of this thesis and declare it is free of plagiarism and of sufficient grammatical clarity to be examined.  To the best of my knowledge, the research and writing are those of the candidate except as acknowledged in the Author Attribution Statement. I confirm that the investigations were conducted in accord with the ethics policies and integrity standards of Nanyang Technological University and that the research data are presented honestly and without prejudice.}{Mar. 2019}{Styles/signature.png}
 
-\thesisdeclareAuthorship{Please select one of the following; *delete as appropriate:\\
-*(A) This thesis does not contain any materials from papers published in peer-reviewed journals or from papers accepted at conferences in which I am listed as an author.\\
+\thesisdeclareAuthorship{Please select one of the following; *delete as appropriate:
+\\
+*(A) This thesis does not contain any materials from papers published in peer-reviewed journals or from papers accepted at conferences in which I am listed as an author.
+\\
 *(B) This thesis contains material from [x number] paper(s) published in the following peer-reviewed journal(s) / from papers accepted at conferences in which I am listed as an author.}
 {Please amend the typical statements below to suit your circumstances if (B) is selected.
 	
@@ -151,8 +155,13 @@ I wish to express my greatest gratitude to my advisor.
 \large{To my dear family}
 \end{center}
 \vfill\vfill\null % Add some space at the bottom to position the quote just right
-
 \cleardoublepage % Start a new page and make the next page a right-hand (odd-numbered) page, producing a blank page if necessary
+
+\pagestyle{fancy} % Return the page headers back to the "fancy" style
+\fancyhead{}   %clear all fields
+\fancyhead[LO]{\sl{\leftmark}}
+\fancyhead[RE]{\sl{\rightmark}}
+\fancyhead[LE,RO]{\thepage}
 
 %----------------------------------------------------------------------------------------
 %	ABSTRACT PAGE
@@ -166,20 +175,20 @@ I wish to express my greatest gratitude to my advisor.
 
 My abstracts
 
+
+
 %----------------------------------------------------------------------------------------
 %	LIST OF CONTENTS/FIGURES/TABLES PAGES
 %----------------------------------------------------------------------------------------
 
 \pagestyle{fancy} % The page style headers have been "empty" all this time, now use the "fancy" headers as defined before to bring them back
 
-\lhead{\sl{Contents}} % Set the left side page header to "Contents"
 \tableofcontents % Write out the Table of Contents
 
-\lhead{\sl{List of Figures}} % Set the left side page header to "List of Figures"
 \listoffigures % Write out the List of Figures
 
-\lhead{\sl{List of Tables}} % Set the left side page header to "List of Tables"
 \listoftables % Write out the List of Tables
+
 
 %----------------------------------------------------------------------------------------
 %	ABBREVIATIONS
@@ -215,8 +224,6 @@ My abstracts
 %----------------------------------------------------------------------------------------
 
 \cleardoublepage  % Start a new page (no need if the previous page is list of figures)
-
-\lhead{\emph{Symbols and Acronyms}} % Set the left side page header to "Symbols"
 
 \listofnomenclature{ll} % Include a list of Symbols (a three column table)
 {
@@ -303,7 +310,6 @@ $a.s.$           & almost sure convergence of a random sequence\\
 \mainmatter       % Begin numeric (1,2,3...) page numbering
 \pagenumbering{arabic}
 \setstretch{1.3}  % Return the line spacing back to 1.3
-\pagestyle{fancy} % Return the page headers back to the "fancy" style
 
 % define the headings for the body of the thesis
 \fancyhead{}   %clear all fields
