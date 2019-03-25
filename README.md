@@ -9,6 +9,10 @@ Author: [Chen Wang](https://wang-chen.github.io)
     
     Please change your name, title, and school in the file of Thesis.cls
     
+## Example:
+   
+   You may read my thesis on [Dr-NTU Open Access](https://dr.ntu.edu.sg/handle/10220/47835)
+    
 ## Updates (declaration statements), Mar. 2019:
     
    According to the [guideline](http://www.ntu.edu.sg/Services/Academic/graduates/ThesisExamination(forresearchstudents)/Pages/Formatoffinalthesis.aspx), all submissions received on or after 1 Jan 2019 must include the declaration statements. 
