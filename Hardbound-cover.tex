@@ -1,0 +1,86 @@
+%MIT License
+%
+%Copyright (c) 2019 HUANG CHONGTIAN
+%
+%Permission is hereby granted, free of charge, to any person obtaining a copy
+%of this software and associated documentation files (the "Software"), to deal
+%in the Software without restriction, including without limitation the rights
+%to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+%copies of the Software, and to permit persons to whom the Software is
+%furnished to do so, subject to the following conditions:
+%
+%The above copyright notice and this permission notice shall be included in all
+%copies or substantial portions of the Software.
+%
+%THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+%IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+%FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+%AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+%LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+%OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+%SOFTWARE.
+\documentclass{article}
+\usepackage{pgfornament}
+% \usepackage[english,greek]{babel}
+\pagestyle{empty}
+\usepackage{tikz}
+\usepackage[calc]{picture}
+\usetikzlibrary{decorations.fractals}
+\usepackage{xstring}
+\makeatletter
+% first, need to fix a bug in xstring:
+\@xs@newmacro\IfDecimal{}{1}{0}{%
+    \@xs@formatnumber{#1}\@xs@reserved@A
+    \decimalpart\z@
+    \afterassignment\@xs@defafterinteger\integerpart\@xs@reserved@A\relax\@xs@nil
+    \expandafter\@xs@testdot\@xs@afterinteger\@xs@nil
+    \ifx\@empty\@xs@afterdecimal\expandafter\@firstoftwo\else\expandafter\@secondoftwo\fi}
+
+\newcommand*\ExtractLeadingNumber[1]{%
+    \IfBeginWith{#1}{ }{\StrBehind{#1}{ }[\temp@@]}{\def\temp@@{#1}}%
+    \IfDecimal\temp@@{#1}{\StrBefore{#1}\@xs@afterdecimal}%
+}
+\newcommand*\ExtractTralingNonDigits[1]{%
+    \IfBeginWith{#1}{ }{\StrBehind{#1}{ }[\temp@@]}{\def\temp@@{#1}}%
+    \IfDecimal\temp@@{}\@xs@afterdecimal
+}
+\makeatother
+
+\newcommand*{\university}[1]{\def\univname{#1}}
+\newcommand*{\department}[1]{\def\deptname{#1}}
+\newcommand*{\thesistitle}[1]{\def\ttitle{#1}}
+\newcommand*{\authors}[1]{\def\authornames{#1}}
+
+% ---- configure layout ----
+\usepackage[papersize={,297mm}, strictheight=false,topmargin=0mm, botmargin, flap=0mm, textwidth=210mm, spine=9mm, cropmarks, cropframe, croptitle=MAE thesis]{zwpagelayout}
+\usepackage{rotating}
+\linespread{1}
+
+% ---- configure name -----
+\department{\Large School of Mechanical and Aerospace Engineering}
+\thesistitle{\textbf{Smart Three-Dimensional Machine Vision}}
+\authors{\Large }
+
+\begin{document}
+\hbox to \textwidth{%
+
+\vbox to \textheight{\hsize \UserWidth \vfill \leavevmode}\hss
+
+%-------------------------- spine ------------------------------
+\vbox to \textheight{\hsize \CropSpine \vfill \centering
+\begin{sideways}\hspace{-0.5cm}\Large \the\year\hspace{2cm}  \authornames{} \hspace{3cm}{\ttitle}  \end{sideways}\vfill}\hss
+
+%-------------------------- cover page ---------------------------------
+\vbox to \textheight{\hsize \UserWidth \centering \vspace{0cm} 
+\setlength{\unitlength}{1cm}
+\begin{picture}(22,27)
+\put(4.5,18){\includegraphics[width=12.8cm]{Styles/ntu_logo.png}}
+% \put(8,15) {{\Large Nanyang Technological University}}
+\put((21cm-\widthof{\LARGE \ttitle})/2,14){{\LARGE \ttitle}}
+\put((21cm-\widthof{\textbf{\deptname{}}})/2,4) {\textbf{\deptname{}}}
+\put((21cm-\widthof{\textbf{\authornames{}}})/2,5) {\textbf{\authornames{}}}
+\put((21cm-\widthof{\textbf{\Large \the\year}})/2,3){\textbf{\Large \the\year}}
+\end{picture}}\hss
+}% text
+
+\end{document}
