@@ -46,4 +46,8 @@ Beautiful title page:
 
 ## For hard cover demo, please refer to the [Demo Page](http://www.ntu.edu.sg/sasd/oas/ge/Documents/FormatofThesis_Sample_Oct2017.pdf).
 
-Acknowledgement: [Jinming Xu](https://jinmingxu.github.io)
+# Acknowledgement
+
+   [Jinming Xu](https://jinmingxu.github.io)
+
+   [Chongtian Huang](https://nerdtomars.github.io/)
