@@ -21,30 +21,10 @@
 %SOFTWARE.
 \documentclass{article}
 \usepackage{pgfornament}
-% \usepackage[english,greek]{babel}
 \pagestyle{empty}
 \usepackage{tikz}
 \usepackage[calc]{picture}
 \usetikzlibrary{decorations.fractals}
-\usepackage{xstring}
-\makeatletter
-% first, need to fix a bug in xstring:
-\@xs@newmacro\IfDecimal{}{1}{0}{%
-    \@xs@formatnumber{#1}\@xs@reserved@A
-    \decimalpart\z@
-    \afterassignment\@xs@defafterinteger\integerpart\@xs@reserved@A\relax\@xs@nil
-    \expandafter\@xs@testdot\@xs@afterinteger\@xs@nil
-    \ifx\@empty\@xs@afterdecimal\expandafter\@firstoftwo\else\expandafter\@secondoftwo\fi}
-
-\newcommand*\ExtractLeadingNumber[1]{%
-    \IfBeginWith{#1}{ }{\StrBehind{#1}{ }[\temp@@]}{\def\temp@@{#1}}%
-    \IfDecimal\temp@@{#1}{\StrBefore{#1}\@xs@afterdecimal}%
-}
-\newcommand*\ExtractTralingNonDigits[1]{%
-    \IfBeginWith{#1}{ }{\StrBehind{#1}{ }[\temp@@]}{\def\temp@@{#1}}%
-    \IfDecimal\temp@@{}\@xs@afterdecimal
-}
-\makeatother
 
 \newcommand*{\university}[1]{\def\univname{#1}}
 \newcommand*{\department}[1]{\def\deptname{#1}}
@@ -53,13 +33,15 @@
 
 % ---- configure layout ----
 \usepackage[papersize={,297mm}, strictheight=false,topmargin=0mm, botmargin, flap=0mm, textwidth=210mm, spine=9mm, cropmarks, cropframe, croptitle=MAE thesis]{zwpagelayout}
-\usepackage{rotating}
+% \usepackage{rotating}
+\usepackage[counterclockwise]{rotating}
+
 \linespread{1}
 
 % ---- configure name -----
 \department{\Large School of Mechanical and Aerospace Engineering}
 \thesistitle{\textbf{Smart Three-Dimensional Machine Vision}}
-\authors{\Large }
+\authors{\Large HUANG CHONGTIAN}
 
 \begin{document}
 \hbox to \textwidth{%
@@ -68,13 +50,18 @@
 
 %-------------------------- spine ------------------------------
 \vbox to \textheight{\hsize \CropSpine \vfill \centering
-\begin{sideways}\hspace{-0.5cm}\Large \the\year\hspace{2cm}  \authornames{} \hspace{3cm}{\ttitle}  \end{sideways}\vfill}\hss
+\begin{sideways}
+\hspace{-0.5cm}\LARGE\ttitle
+\hspace{2cm}  \authornames{} 
+\hspace{3cm}{\Large \the\year}  
+\end{sideways}
+\vfill}\hss
 
 %-------------------------- cover page ---------------------------------
 \vbox to \textheight{\hsize \UserWidth \centering \vspace{0cm} 
 \setlength{\unitlength}{1cm}
 \begin{picture}(22,27)
-\put(4.5,18){\includegraphics[width=12.8cm]{Styles/ntu_logo.png}}
+\put(4.5,18){\includegraphics[width=12.8cm]{ntu_logo.png}}
 % \put(8,15) {{\Large Nanyang Technological University}}
 \put((21cm-\widthof{\LARGE \ttitle})/2,14){{\LARGE \ttitle}}
 \put((21cm-\widthof{\textbf{\deptname{}}})/2,4) {\textbf{\deptname{}}}
