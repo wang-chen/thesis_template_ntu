@@ -9,6 +9,15 @@ Author: [Chen Wang](https://wang-chen.github.io)
     
     Please change your name, title, and school in the file of Thesis.cls
     
+### Main thesis:
+    Please change your name, title, and school in the file of Thesis.cls
+
+### Hard-cover binding (Not recommend do this by yourself):
+    Midify the hardbound-cover.tex
+   You may not need to do this by yourself if you follow the [Format](https://www.ntu.edu.sg/sasd/oas/ge/Documents/FormatofThesis_Sample_Oct2017.pdf). Just ask the stuff to follow the NTU 'standard'. 
+   if your need hard-binding in 7 days, just send your thesis to [ultrasupplies](https://www.ultrasupplies.com.sg/solutions/book-binding/hard-cover-binding), and confirm with them.   
+    
+    
 ## Example:
    
    You may read my thesis on [Dr-NTU Open Access](https://dr.ntu.edu.sg/handle/10220/47835)
