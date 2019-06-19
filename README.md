@@ -6,6 +6,11 @@ This version has been verified by NTU
 Author: [Chen Wang](https://wang-chen.github.io)
 
 ## Usage:
+
+ The most convenient way is to open the following read only overleaf project and copy to your own workspace.
+
+ [Thesis template Overleaf Project](https://v2.overleaf.com/read/hrjsywqdhccp)
+
     
 ### Main thesis
     Please change your name, title, and school in the file of Thesis.cls
@@ -47,9 +52,6 @@ Plain title page:
 
 Beautiful title page:
 ![The title page example](https://github.com/wang-chen/thesis_template_ntu/blob/master/Styles/title-page.png)
-
-    
-## You may also view this template in [Sharelatex (Overleaf) Project](https://v2.overleaf.com/read/hrjsywqdhccp)
 
 ## For hard cover demo, please refer to the [Demo Page](http://www.ntu.edu.sg/sasd/oas/ge/Documents/FormatofThesis_Sample_Oct2017.pdf).
 
