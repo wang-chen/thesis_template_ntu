@@ -7,7 +7,7 @@ Author: [Chen Wang](https://wang-chen.github.io)
 
 ## Usage:
 
- The most convenient way is to open the following read only overleaf project and copy to your own workspace.
+ If you use Overleaf, you may also use the following link.
 
  [Thesis template Overleaf Project](https://v2.overleaf.com/read/hrjsywqdhccp)
 
