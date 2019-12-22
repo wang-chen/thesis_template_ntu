@@ -14,6 +14,9 @@ Author: [Chen Wang](https://wang-chen.github.io)
     
 ### Main thesis
     Please change your name, title, and school in the file of Thesis.cls
+    
+### Signature
+   For digital signature, make your own and put it in the folder "Styles" to replace the original one.
 
 ### Hard-cover binding (Not recommend do this by yourself)
     Midify the hardbound-cover.tex
@@ -38,7 +41,6 @@ Author: [Chen Wang](https://wang-chen.github.io)
     v.   Acknowledgements	
     vi.  Table of Contents
     vii. Summary
-   For digital signature, make your own and put it in the folder "Styles".
 
 ## Updates (Title Page), Aug. 2018:
 
