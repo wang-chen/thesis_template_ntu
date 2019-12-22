@@ -60,3 +60,7 @@ Beautiful title page:
    [Jinming Xu](https://jinmingxu.github.io)
 
    [Chongtian Huang](https://nerdtomars.github.io/)
+   
+## Citation
+
+   You may cite [my thesis or papers](https://chenwang.site/cite/bibtex.txt), if you find this template is useful.
