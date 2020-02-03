@@ -65,4 +65,4 @@ Beautiful title page:
    
 ## Citation
 
-   You may cite [my thesis or papers](https://scholar.google.com/citations?user=vZfmKl4AAAAJ), if you find this template is useful.
+   You may cite [my thesis or papers](https://chenwang.site/cite/citations.txt), if you find this template is useful.
