@@ -22,8 +22,8 @@
 \documentclass[12pt,a4paper,twoside]{Thesis} % Paper size, default font size and one-sided paper
 
 \graphicspath{%
-	{./Pictures/}% 
-	{./Figures/}% 
+	{./Pictures/}%
+	{./Figures/}%
 }
 \DeclareMathOperator{\Tr}{Tr}
 \let\savedegree\degree
@@ -41,7 +41,7 @@
 \usepackage{mathtools}
 \usepackage[ruled,vlined,noresetcount]{algorithm2e}
 %\usepackage{algpseudocode}
-\usepackage[square, numbers, comma, sort&compress]{natbib} % Use the natbib reference package - read up on this to edit the reference style; if you want text (e.g. Smith et al., 2012) for the in-text references (instead of numbers), remove 'numbers' 
+\usepackage[square, numbers, comma, sort&compress]{natbib} % Use the natbib reference package - read up on this to edit the reference style; if you want text (e.g. Smith et al., 2012) for the in-text references (instead of numbers), remove 'numbers'
 
 \title{\ttitle} % Defines the thesis title - don't touch this
 
@@ -49,15 +49,7 @@
 \usepackage{float}
 \usepackage{color,soul}               % highlighting text
 \usepackage{enumerate}
-
-% \usepackage{enumitem}
 \usepackage{Styles/mydefs}
-
-% \theoremstyle{plain}
-% \newtheorem{theorem}{Theorem}[chapter]
-% \newtheorem{corollary}[theorem]{Corollary}
-% \newtheorem{lemma}{Lemma}[chapter]
-% \newtheorem{definition}{Definition}[chapter]
 
 
 \begin{document}
@@ -98,9 +90,9 @@
 \\
 *(B) This thesis contains material from [x number] paper(s) published in the following peer-reviewed journal(s) / from papers accepted at conferences in which I am listed as an author.}
 {Please amend the typical statements below to suit your circumstances if (B) is selected.
-	
+
 	Chapter 4 is published as {\color{blue}D.T. Murphy, S. Schmid, J.R. Hester, P.E.R. Blanchard, and W. Miiller.  Coordination site disorder in spinel-type LiMnTiO4.  Inorganic Chemistry 54, 4636-4643 (2015). DOI: 10.1021/ic502747p.}
-	
+
 	The contributions of the co-authors are as follows:
 	\begin{itemize}[topsep=1pt,itemsep=1pt,partopsep=1pt, parsep=1pt]
 		\item A/Prof Schmid provided the initial project direction and edited the manuscript drafts.
@@ -111,9 +103,9 @@
 		\item Dr Peter Blanchard assisted in the interpretation of the X-ray absorption spectroscopy data and carried out the spectral interpretation.
 		\item Dr Wojciech Miiller assisted in the collection and provide guidance in the interpretation of the magnetic measurement data.
 	\end{itemize}
-	
+
 	Chapter 5 is published as {\color{blue}H. V Doan, B. Yao, Y. Fang, A. Sartbaeva, U. Hintermair, V. P Ting, Controlled Formation of Hierarchical Metal-Organic Frameworks using CO2 Expanded Solvent Systems. In press, ACS Sustainable Chemistry \& Engineering (2017). DOI: 10.1021/acssuschemeng.7b01429}
-	
+
 	The contributions of the co-authors are as follows:
 	\begin{itemize}[topsep=1pt,itemsep=1pt,partopsep=1pt, parsep=1pt]
 		\item Prof Ting suggested the materials area and edited the manuscript drafts.
@@ -233,7 +225,7 @@ $\mathcal{R}^n$                    &the $n$-dimensional Euclidean space\\
 $\mathcal{H}$                      &the Euclidean  space\\
 $\norm{\cdot}$                     &the 2-norm of a vector or matrix in Euclidean space\\
 $\norm{\cdot}_G$                   &the induced norm of a vector in G-space\\
-$\norm{\cdot}_E$                   &the induced norm of a vector or matrix in probabilistic space\\ 
+$\norm{\cdot}_E$                   &the induced norm of a vector or matrix in probabilistic space\\
 
 
 $\odot$                            &the Hadamard (component-wise) product\\
@@ -247,18 +239,18 @@ $\mathcal{C}^k$               &the function with continuous partial derivatives 
 % $T_x\mathcal{M}$              &the tangent space of the set $\mathcal{M}$\\
 % $x_i$                         &the $i$-th component of a vector $x$\\
 $x_{i,k}$                     &the $i$-th component of a vector $x$ at time $k$\\
-$\bar{x}$                     &the vector with the average of all components of $x$ as each element\\ 
+$\bar{x}$                     &the vector with the average of all components of $x$ as each element\\
 $\ones$                       &all-ones column vector with proper dimension\\
 $\mathcal{C}$                 &the average space, i.e., $span\{{\bf 1}\}$ \\
 $\mathcal{C}^\perp$           &the disagreement space, i.e., $span^\perp\{{\bf 1}\}$ \\
 % W                             &the weight matrix\\
 % L                             &the Laplacian matrix\\
 $\Pi_\parallel$               &the projection matrix to the average space $\mathcal{C}$\\
-$\Pi_\perp$                   &the projection matrix to the disagreement space $\mathcal{C}^\perp$ \\ 
-$O(\cdot)$                    &order of magnitude or ergodic convergence rate (running average)\\ 
-$o(\cdot)$                    &non-ergodic convergence rate\\ 
-% $O(\cdot)$                    &the ergodic convergence rate stated in terms of the running average\\ 
-% $o(\cdot)$                    &the non-ergodic convergence rate stated in terms of $x_k$\\ 
+$\Pi_\perp$                   &the projection matrix to the disagreement space $\mathcal{C}^\perp$ \\
+$O(\cdot)$                    &order of magnitude or ergodic convergence rate (running average)\\
+$o(\cdot)$                    &non-ergodic convergence rate\\
+% $O(\cdot)$                    &the ergodic convergence rate stated in terms of the running average\\
+% $o(\cdot)$                    &the non-ergodic convergence rate stated in terms of $x_k$\\
 
 
 
@@ -324,14 +316,14 @@ $a.s.$           & almost sure convergence of a random sequence\\
 
 % \part{Introduction and Background}
 \input{./Chapters/Chapter1}
-\input{./Chapters/Chapter2} 
+\input{./Chapters/Chapter2}
 \input{./Chapters/Chapter3}
 %\part{Coordinated Control} %
-%\input{./Chapters/Chapter4} 
+%\input{./Chapters/Chapter4}
 %\part{Coordinated Estimation} %
-%\input{./Chapters/Chapter5} 
-%\input{./Chapters/Chapter6} 
-%\input{./Chapters/Chapter7} 
+%\input{./Chapters/Chapter5}
+%\input{./Chapters/Chapter6}
+%\input{./Chapters/Chapter7}
 
 
 %----------------------------------------------------------------------------------------
@@ -355,7 +347,7 @@ $a.s.$           & almost sure convergence of a random sequence\\
 %----------------------------------------------------------------------------------------
 
 \authorpublications{
-	
+
 \section*{Awards}
 
 \begin{itemize}
@@ -390,6 +382,6 @@ $a.s.$           & almost sure convergence of a random sequence\\
 \label{Bibliography}
 \setstretch{1}
 \bibliographystyle{unsrtnat}
-\bibliography{References/first_paper,References/second_paper} 
+\bibliography{References/first_paper,References/second_paper}
 
-\end{document}  
+\end{document}
