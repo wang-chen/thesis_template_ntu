@@ -165,10 +165,14 @@
         keywordstyle=\color{blue},
         commentstyle=\color[rgb]{0.13,0.55,0.13}\em,
         stringstyle=\color[rgb]{0.7,0,0} }
+
+% This only changes you PDF information. The thesis title and author name need further changes in \thesistile and \authors
+% To remove backref of references (the page number associated with the references where it is cited), please remove "backref=page".
 \usepackage[pdfpagemode={UseOutlines},bookmarks=true,bookmarksopen=true,
    bookmarksopenlevel=1,bookmarksnumbered=true,hypertexnames=true,
    colorlinks,linkcolor={blue},citecolor={blue},urlcolor={black},pdfauthor={Chen Wang},pdftitle={Kernel Learning for Visual Perception},
-   pdfstartview={FitV},unicode,breaklinks=true,plainpages=false, backref=page]{hyperref}
+   pdfstartview={FitV},unicode,breaklinks=true,plainpages=false,backref=page]{hyperref}
+
 \pdfstringdefDisableCommands{
    \let\\\space
 }
