@@ -57,6 +57,22 @@ Beautiful title page:
 
 ## For hard cover demo, please refer to the [Demo Page](http://www.ntu.edu.sg/sasd/oas/ge/Documents/FormatofThesis_Sample_Oct2017.pdf).
 
+
+## Updates (Thesis Parts), Jul. 2021:
+
+   Add examples to split the thesis into several parts. This should be useful when there are many chapters. Use between chapters and see examples in "mythesis.tex".
+
+         \input{./Chapters/Chapter1}
+
+         \part{Use this when there are many chapters (Part I)}
+         \input{./Chapters/Chapter2}
+         \input{./Chapters/Chapter3}
+
+         \part{Again for Second Part}
+         \input{./Chapters/Chapter4}
+         \input{./Chapters/Chapter5}
+
+
 # Acknowledgement
 
    [Jinming Xu](https://jinmingxu.github.io)
