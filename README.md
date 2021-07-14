@@ -7,11 +7,8 @@ Author: [Chen Wang](https://wang-chen.github.io)
 
 ## Usage:
 
- If you use Overleaf, you may also use the following link.
+ You can see direct example in [Overleaf Project](https://www.overleaf.com/read/zbqyfqxwdmss) (View Only).
 
- [Thesis template Overleaf Project](https://v2.overleaf.com/read/hrjsywqdhccp)
-
-    
 ### Main thesis
     Please change your name, title, and school in the file of Thesis.cls
     
