@@ -26,13 +26,11 @@ Author: [Chen Wang](https://wang-chen.github.io)
     
 ## Example:
    
-   You may read my thesis on [Dr-NTU Open Access](https://dr.ntu.edu.sg/handle/10220/47835)
+   You may read my thesis on [Dr-NTU Open Access](https://hdl.handle.net/10356/105527)
     
 ## Updates (declaration statements), Mar. 2019:
-    
-   According to the [guideline](http://www.ntu.edu.sg/Services/Academic/graduates/ThesisExamination(forresearchstudents)/Pages/Formatoffinalthesis.aspx), all submissions received on or after 1 Jan 2019 must include the declaration statements. 
-   
-   This version has been modified according to the [Format of final thesis](http://research.ntu.edu.sg/rieo/RI/Pages/Theses--Dissertations.aspx), i.e.
+
+   This version has been modified according to the [Format of final thesis](https://www.ntu.edu.sg/research/theses-dissertations), all submissions received on or after 1 Jan 2019 must include the declaration statements.
    
     i.   Title Page	
     ii.  Statement of Originality .      }
@@ -57,7 +55,6 @@ Beautiful title page:
 
 ## For hard cover demo, please refer to the [Demo Page](http://www.ntu.edu.sg/sasd/oas/ge/Documents/FormatofThesis_Sample_Oct2017.pdf).
 
-
 ## Updates (Thesis Parts), Jul. 2021:
 
    Add examples to split the thesis into several parts. This should be useful when there are many chapters. Use between chapters and see examples in "mythesis.tex".
@@ -71,10 +68,9 @@ Beautiful title page:
          \part{Again for Second Part}
          \input{./Chapters/Chapter4}
          \input{./Chapters/Chapter5}
-
-
-# Acknowledgement
-
+   
+## Other Contributors
+    
    [Jinming Xu](https://jinmingxu.github.io)
 
    [Chongtian Huang](https://nerdtomars.github.io/)
@@ -82,3 +78,10 @@ Beautiful title page:
 ## Citation
 
    You may cite [my thesis or papers](https://scholar.google.com/citations?user=vZfmKl4AAAAJ), if you find this template is useful.
+
+## Sponsor
+
+   Want to support me? You can go to my official [GitHub Sponsor](https://github.com/sponsors/wang-chen) page!
+
+   Alternatively, you can use [PayPal](https://www.paypal.com/paypalme/DrChenWang) for direct one time donation!
+   
