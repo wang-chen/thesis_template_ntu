@@ -7,22 +7,14 @@ Author: [Chen Wang](https://wang-chen.github.io)
 
 ## Usage:
 
- If you use Overleaf, you may also use the following link.
+ You can see direct example in [Overleaf Project](https://www.overleaf.com/read/zbqyfqxwdmss) (View Only).
 
- [Thesis template Overleaf Project](https://v2.overleaf.com/read/hrjsywqdhccp)
-
-    
 ### Main thesis
     Please change your name, title, and school in the file of Thesis.cls
     
 ### Signature
    For digital signature, make your own and put it in the folder "Styles" to replace the original one.
 
-### Hard-cover binding (Not recommend do this by yourself)
-    Midify the hardbound-cover.tex
-   You may not need to do this by yourself if you follow the [Format](https://www.ntu.edu.sg/sasd/oas/ge/Documents/FormatofThesis_Sample_Oct2017.pdf). Just ask the stuff to follow the NTU 'standard'. 
-   if your need hard-binding in 7 days, just send your thesis to [ultrasupplies](https://www.ultrasupplies.com.sg/solutions/book-binding/hard-cover-binding), and confirm with them.   
-    
     
 ## Example:
    
@@ -67,7 +59,13 @@ Beautiful title page:
     \part{Again for Second Part}
     \input{./Chapters/Chapter4}
     \input{./Chapters/Chapter5}
-   
+
+## Hard-cover binding (Not recommend do this by yourself)
+    Midify the hardbound-cover.tex
+   You may not need to do this by yourself if you follow the [Format](https://www.ntu.edu.sg/sasd/oas/ge/Documents/FormatofThesis_Sample_Oct2017.pdf). Just ask the stuff to follow the NTU 'standard'. 
+   if your need hard-binding in 7 days, just send your thesis to [ultrasupplies](https://www.ultrasupplies.com.sg/solutions/book-binding/hard-cover-binding), and confirm with them.   
+
+
 ## Other Contributors
     
    [Jinming Xu](https://jinmingxu.github.io)
