@@ -9,18 +9,26 @@ Author: [Chen Wang](https://wang-chen.github.io)
 
  You can see direct example in [Overleaf Project](https://www.overleaf.com/read/zbqyfqxwdmss) (View Only).
 
-### Main thesis
+#### Main thesis
     Please change your name, title, and school in the file of Thesis.cls
     
-### Signature
+#### Signature
    For digital signature, make your own and put it in the folder "Styles" to replace the original one.
-
-    
-## Example:
+ 
+#### Example:
    
-   You may read my thesis on [Dr-NTU Open Access](https://hdl.handle.net/10356/105527)
+   You may read my thesis on [Dr-NTU](https://hdl.handle.net/10356/105527)
+   
+#### Hard-cover binding (Not recommend do this by yourself)
     
-## Updates (declaration statements), Mar. 2019:
+    Midify the hardbound-cover.tex
+   You may not need to do this by yourself if you follow the [Format](https://www.ntu.edu.sg/sasd/oas/ge/Documents/FormatofThesis_Sample_Oct2017.pdf). Just ask the stuff to follow the NTU 'standard'. 
+   if your need hard-binding in 7 days, just send your thesis to [ultrasupplies](https://www.ultrasupplies.com.sg/solutions/book-binding/hard-cover-binding), and confirm with them.   
+
+
+## What's New
+    
+#### Updates (declaration statements), Mar. 2019:
 
    This version has been modified according to the [Format of final thesis](https://www.ntu.edu.sg/research/theses-dissertations), all submissions received on or after 1 Jan 2019 must include the declaration statements.
    
@@ -32,7 +40,7 @@ Author: [Chen Wang](https://wang-chen.github.io)
     vi.  Table of Contents
     vii. Summary
 
-## Updates (Title Page), Aug. 2018:
+#### Updates (Title Page), Aug. 2018:
 
    We provide two styles for the title page, use "\maketitleforreview" or "\maketitle", in the file of "mythesis.tex", to choose your prefered one. Normally, the University prefers "\maketitleforreview".
         
@@ -46,9 +54,11 @@ Beautiful title page:
 ![The title page example](https://github.com/wang-chen/thesis_template_ntu/blob/master/Styles/title-page.png)
 
 
-## Updates (Thesis Parts), Jul. 2021:
+#### Updates (Thesis Parts), Jul. 2021:
 
-   Add examples to split the thesis into several parts. This should be useful when there are many chapters. Use between chapters and see examples in "mythesis.tex".
+   Add examples to split the thesis into several parts. 
+   This should be useful when there are many chapters. 
+   Use it between chapters and see examples in "mythesis.tex".
 
     \input{./Chapters/Chapter1}
 
@@ -59,11 +69,6 @@ Beautiful title page:
     \part{Again for Second Part}
     \input{./Chapters/Chapter4}
     \input{./Chapters/Chapter5}
-
-## Hard-cover binding (Not recommend do this by yourself)
-    Midify the hardbound-cover.tex
-   You may not need to do this by yourself if you follow the [Format](https://www.ntu.edu.sg/sasd/oas/ge/Documents/FormatofThesis_Sample_Oct2017.pdf). Just ask the stuff to follow the NTU 'standard'. 
-   if your need hard-binding in 7 days, just send your thesis to [ultrasupplies](https://www.ultrasupplies.com.sg/solutions/book-binding/hard-cover-binding), and confirm with them.   
 
 
 ## Other Contributors
