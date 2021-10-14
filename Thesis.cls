@@ -446,6 +446,8 @@
 \cleardoublepage
 }
 
+\usepackage{tikz}
+\usepackage{eso-pic}
 % NTU Style 3 statements
 \newcommand\thesisdeclareOriginality[3]{
 	\btypeout{Declaration}
@@ -456,7 +458,9 @@
 		\vspace{2.5cm}
 		\begin{center}
 			\makebox[4cm]{#2}  \hfill
-			\makebox[4cm]{\includegraphics[height=0.9cm]{#3}}\\
+      \tikz[remember picture,overlay] 
+      \node[opacity=0.9,inner sep=0pt]at (2.13, 0.5) {\includegraphics[width=4cm,height=1.527cm]{Styles/ntu-watermark.png}};
+      \makebox[4cm]{\includegraphics[height=0.9cm]{#3}}\\
 		\end{center}
 		\vspace{-1.8cm}
 		\begin{center}
@@ -476,6 +480,8 @@
 		\vspace{2.5cm}
 		\begin{center}
 			\makebox[4cm]{#2}  \hfill
+      \tikz[remember picture,overlay] 
+      \node[opacity=0.9,inner sep=0pt]at (2.13, 0.5) {\includegraphics[width=4cm,height=1.527cm]{Styles/ntu-watermark.png}};
 			\makebox[4cm]{\includegraphics[height=0.9cm]{#3}}\\
 		\end{center}
 		\vspace{-1.8cm}
@@ -499,6 +505,8 @@
 		\vspace{2.5cm}
 		\begin{center}
 			\makebox[4cm]{#3}  \hfill
+      \tikz[remember picture,overlay] 
+      \node[opacity=0.9,inner sep=0pt]at (2.13, 0.5) {\includegraphics[width=4cm,height=1.527cm]{Styles/ntu-watermark.png}};
 			\makebox[4cm]{\includegraphics[height=0.9cm]{#4}}\\
 		\end{center}
 		\vspace{-1.8cm}
