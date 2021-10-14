@@ -27,6 +27,16 @@ Author: [Chen Wang](https://wang-chen.github.io)
 
 
 ## What's New
+
+#### Updates (Signature Watermark), 25 Jun 2021:
+
+   Students and supervisors are advised to sign on the NTU watermark feature.
+   This template has added the watermark as default.
+   To use it properly, your signature image has to be the **png format with transparent background**. See [Signature Example](Styles/signature.png).
+
+   <p align="center">
+     <img src="Styles/watermark-example.png" width="400" />
+   </p>
     
 #### Updates (declaration statements), Mar. 2019:
 
@@ -47,11 +57,10 @@ Author: [Chen Wang](https://wang-chen.github.io)
         %\maketitle
         \maketitleforreview
 
-Plain title page:
-![The title page example](https://github.com/wang-chen/thesis_template_ntu/blob/master/Styles/title-page-plain.png)
-
-Beautiful title page:
-![The title page example](https://github.com/wang-chen/thesis_template_ntu/blob/master/Styles/title-page.png)
+Plain title page   |  Beautiful title page 
+:-------------------------:|:-------------------------:
+\maketitleforreview |  \maketitle
+<img src="Styles/title-page-plain.png" width="450" />  |  <img src="Styles/title-page.png" width="450" />
 
 
 #### Updates (Thesis Parts), Jul. 2021:
