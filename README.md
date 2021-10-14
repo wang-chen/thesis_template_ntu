@@ -28,7 +28,7 @@ Author: [Chen Wang](https://wang-chen.github.io)
 
 ## What's New
 
-#### Updates (Signature Watermark), 25 Jun 2021:
+#### Updates (Signature Watermark), Oct. 2021:
 
    Students and supervisors are advised to sign on the NTU watermark feature.
    This template has added the watermark as default.
@@ -37,6 +37,22 @@ Author: [Chen Wang](https://wang-chen.github.io)
    <p align="center">
      <img src="Styles/watermark-example.png" width="400" />
    </p>
+   
+#### Updates (Thesis Parts), Jul. 2021:
+
+   Add examples to split the thesis into several parts. 
+   This should be useful when there are many chapters. 
+   Use it between chapters and see examples in "mythesis.tex".
+
+    \input{./Chapters/Chapter1}
+
+    \part{Part Name: Use it when there are many chapters (Part I)}
+    \input{./Chapters/Chapter2}
+    \input{./Chapters/Chapter3}
+
+    \part{Again for Second Part}
+    \input{./Chapters/Chapter4}
+    \input{./Chapters/Chapter5}
     
 #### Updates (declaration statements), Mar. 2019:
 
@@ -62,22 +78,6 @@ Plain title page   |  Beautiful title page
 \maketitleforreview |  \maketitle
 <img src="Styles/title-page-plain.png" width="450" />  |  <img src="Styles/title-page.png" width="450" />
 
-
-#### Updates (Thesis Parts), Jul. 2021:
-
-   Add examples to split the thesis into several parts. 
-   This should be useful when there are many chapters. 
-   Use it between chapters and see examples in "mythesis.tex".
-
-    \input{./Chapters/Chapter1}
-
-    \part{Part Name: Use it when there are many chapters (Part I)}
-    \input{./Chapters/Chapter2}
-    \input{./Chapters/Chapter3}
-
-    \part{Again for Second Part}
-    \input{./Chapters/Chapter4}
-    \input{./Chapters/Chapter5}
 
 
 ## Other Contributors
